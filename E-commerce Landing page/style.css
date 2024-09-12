@@ -1,0 +1,853 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+#new-arrivals {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#our-products {
+    padding-top: 1rem;
+}
+
+#why-choose-us {
+    padding-top: 5.5rem;
+}
+
+#most-popular-items {
+    padding-top: 5rem;
+}
+
+#contact-us {
+    padding-top: 6rem;
+}
+
+#lamp {
+    padding-top: 5rem;
+}
+
+#chair {
+    padding-top: 5rem;
+}
+
+#table {
+    padding-top: 5rem;
+}
+
+#bed {
+    padding-top: 5rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color:#101011;
+    --secondary-color:#F6F7F7;
+    --background-color:#F4F5F6;
+    --navbackground-color:#1C2635;
+    --text-color:#181819;
+}
+body{
+    height:100vh;
+    background-color: var(--background-color);
+    min-height: 2000px;
+}
+
+/* Navbar Section Start*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    height: 80px;
+    display: flex;
+    background-color: #E6E7E2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.transparent {
+    background-color: rgba(230, 231, 226, 0.8);
+}
+
+.main-name {
+    font-weight: 700;
+    color: var(--navbackground-color);
+}
+.main-name span {
+    font-weight: 700;
+    color: var(--navbackground-color);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 36px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--navbackground-color);
+    transition: 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    opacity: 0.7;
+}
+
+.navbar ul li a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--navbackground-color);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar ul li a:hover::after {
+    transform: scaleX(0.7);
+}
+
+.navbar .navbar-extra {
+    display: none;
+}
+
+.navbar .navbar-extra a{
+    color: var(--navbackground-color);
+}
+
+/* Navbar Section End */
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(images/furniture.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.hero-section .main-section {
+    max-width: 50%;
+    align-items: center;
+    justify-content: center;
+    padding-left:48px;
+    padding-bottom: 100px;
+}
+
+.hero-section .main-section .title {
+    font-size: 56px;
+    color: var(--text-color);
+    padding-bottom: 10px;
+}
+
+.hero-section .main-section p {
+    text-align: justify;
+    padding-bottom: 20px;
+    padding-right: 130px;
+}
+
+.hero-section .main-section .main-button {
+    display: flex;
+    gap: 15px;
+}
+
+
+.hero-section .main-section .beli-sekarang {
+    background-color: var(--navbackground-color);
+    color: var(--secondary-color);
+    padding: 12px 0;
+    width: 40%;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.hero-section .main-section .beli-sekarang:hover {
+    opacity: 0.7;
+}
+
+.hero-section .main-section .pesan-sekarang {
+    background-color: var(--navbackground-color);
+    color: var(--secondary-color);
+    padding: 12px 0;
+    width: 40%;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.hero-section .main-section .pesan-sekarang:hover {
+    opacity: 0.7;
+}
+/* Hero Section End */
+
+/* coba section */
+.coba-section {
+    min-height: 100vh;
+    margin-top: 30px;
+}
+
+.coba-section .new-arrivals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.coba-section .desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 12px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.coba-section .data {
+    width: 250px;
+    height: 68%;
+    padding: 12px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.coba-section .border {
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.coba-section .border .data .diskon {
+    padding-left: 3px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.coba-section .flex-baju2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 18px auto;
+    max-width: 70%;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.coba-section .flex-baju2 img {
+    width: 495px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.coba-section .data img {
+    width: 100%;
+    height: 301px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.desk-flex {
+    margin: 8px 0 4px;
+    padding: 0 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desk-flex .desk {
+    font-size: 16px;
+    margin-bottom: 3px;
+    color: #1C2635;
+}
+
+.desk-flex .harga {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.items-section .flex-lampu .flex-icons {
+    display: flex;
+    gap: 3px;
+}
+
+.items-section .flex-lampu .flex-icons i {
+    padding-top: 6px;
+}
+/* Coba Section End */
+
+/* Items Section */
+.our-products {
+    background-color: #E8E8E6;
+    height: max-content;
+}
+.items-section {
+    max-width: 70%;
+    margin: 0 auto 20px;
+}
+
+.items-section .items {
+    font-size: 48px;
+    margin-top: 50px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: center;
+    color: var(--navbackground-color);
+}
+
+.items-section .flex-lampu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 18px;
+    padding: 0 24px;
+}
+
+.items-section .flex-lampu ul{
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+}
+
+.items-section .flex-lampu ul li {
+    list-style: none;
+}
+
+.items-section .flex-lampu ul li a {
+    text-decoration: none;
+    color: var(--navbackground-color);
+    transition: 0.3s ease;
+}
+
+.items-section .flex-lampu ul li a:hover {
+    opacity: 0.7;
+}
+
+
+.items-section .list-card {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.items-section .list-card .data {
+    text-align: center;
+    padding: 6px;
+    width: 300px;
+    height: 385px;
+}
+
+.items-section .list-card .data img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+.items-section .list-card .data h3 {
+    color: #1C2635;
+    margin-bottom: 6px;
+}
+
+.items-section .list-card .data .lampu {
+    color: #fff;
+    background-color: #1C2635;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.items-section .list-card .data .lampu:hover {
+    opacity: 0.7;
+}
+
+.items-section .list-card .data .lampu:hover {
+    opacity: 0.8;
+}
+
+/* Why Choose Us Start */
+.flex-us {
+    display: flex;
+    max-width: 70%;
+    margin: 80px auto;
+    justify-content: center;
+    padding: 0 22px;
+}
+
+.flex-us .kata {
+    padding-left: 3px;
+    padding-top: 12px;
+}
+
+.flex-us .kata .title {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.flex-us .kata .deskripsi {
+    max-width: 80%;
+    text-align: justify;
+    padding-top: 12px;
+}
+
+.flex-us .kata .flex-satu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 54px;
+    margin: top 8px;
+}
+
+.flex-us .kata .card {
+    width: 35%;
+    height: auto;
+    margin-top: 24px;
+}
+
+.flex-us .kata .card i{
+    font-size: 40px;
+}
+
+.flex-us .kata .card h4{
+    padding: 4px 4px 0;
+    font-size: 18px;
+}
+
+.flex-us .kata .card p{
+    padding-left: 4px;
+    padding-top: 4px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.flex-us img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+}
+/* Why Choose Us End */
+
+/* Most Popular Items Start */
+.most {
+    max-width: 70%;
+    margin: 24px auto;
+    min-height: max-content;
+}
+.most h2{
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.most .gabung {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.3rem;
+}
+
+.most .gabung img {
+    width: 45%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.most .bungkus {
+    margin-top: 48px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4.2rem;
+    justify-content: center;
+    padding: 0 22px;
+}
+
+.most .bungkus .bungkus-dua {
+    max-width: 20%;
+    height: auto;
+    padding: 2px;
+}
+
+.most .bungkus .bungkus-dua img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+.most .bungkus .bungkus-dua h4 {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 8px auto 0;
+}
+
+.most .bungkus .bungkus-dua p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.most .load-more {
+    width: 96%;
+    border-radius: 6px;
+    display: flex;
+    margin: 26px auto;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid var(--navbackground-color);
+    color: var(--navbackground-color);
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Most Popular Items End */
+
+/* Contact Us Start */
+.contact-us {
+    max-width: 70%;
+    margin: 94px auto;
+    min-height: max-content;
+    padding: 0 22px;
+}
+
+.contact-us .flex-cs {
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+}
+
+.contact-us .flex-cs .column-cs {
+    padding-top: 12px;
+    width: 100%;
+}
+
+.contact-us .flex-cs .column-cs .kirim {
+    width: 100%;
+    height: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    border-radius: 12px;
+    background-color: #1C2635;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-us .flex-cs .kanan {
+    width: 100%;
+}
+
+.cs-satu .name {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #181819;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.cs-satu .pesan {
+    padding-left: 15px;
+    width: 100%;
+    padding-top: 15px;
+    padding-right: 15px;
+    border: 2px solid #181819;
+    border-radius: 12px;
+    height: 299px;
+    margin-bottom: 24px;
+}
+
+.contact-us .kanan {
+    width: 100%;
+    padding: 0 24px 0;
+}
+
+.contact-us .kanan h3 {
+    font-size: 34px;
+    text-align: center;
+    border-bottom: 2px solid #101011;
+    letter-spacing: 3px;
+}
+
+.contact-us .kanan .phone {
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #101011;
+
+}
+
+.contact-us .kanan .phone i {
+    font-size: 24px;
+}
+
+.contact-us .kanan .phone h4 {
+    width: 70%;
+    font-size: 18px;
+}
+
+.contact-us .kanan img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+/* Contact Us End */
+
+/* Footer Start */
+.footer {
+    width: auto;
+    background-color: #E8E8E6;
+    height: max-content;
+    padding: 3rem;
+}
+
+.footer .flex-footer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer .flex-footer .title-footer {
+    width: 25%;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .flex-footer .title-footer h3 {
+    color: var(--navbackground-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.footer .flex-footer .title-footer p {
+    text-align: justify;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.footer .flex-footer .title-footer .flex-button {
+    display: flex;
+}
+
+.footer .flex-footer .title-footer .email-footer {
+    padding: 8px 12px;
+    width: 70%;
+    border: 2px solid var(--navbackground-color);
+}
+
+.footer .flex-footer .title-footer .btn-footer {
+    width: 30%;
+    background-color: var(--navbackground-color);
+    color: #fff;
+}
+
+.footer .flex-footer .desc-footer {
+    width: 75%;
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+}
+
+.footer .flex-footer .desc-footer .desc-satu {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .flex-footer .desc-footer .desc-satu h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer .flex-footer .desc-footer .desc-satu a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--navbackground-color);
+    margin-top: 0.5rem;
+}
+/* Footer End */
+
+@media screen and (max-width: 1024px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    .hero-section {
+        padding-left: 2rem ;
+    }
+
+    .hero-section .main-section {
+        width: 50%;
+        padding: 0;
+    }
+
+    .hero-section .main-section .title {
+        width: 90%;
+        padding: 0;
+        margin-bottom: 1rem;
+        font-size: 2.6rem;
+    }
+
+    .hero-section .main-section p {
+        padding: 0;
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+
+    .hero-section .main-section .main-button {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero-section .main-section .main-button .beli-sekarang,
+    .hero-section .main-section .main-button .pesan-sekarang {
+        width: 50%;
+    }
+
+    .coba-section .new-arrivals, .coba-section .desc {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .coba-section .border {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .coba-section .flex-baju2 img {
+        width: 100%;
+        height: auto;
+        padding: 0 3rem;
+        margin: 0 auto 2rem;
+    }
+
+    .our-products .items-section .list-card .data .lihatlainnya {
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: #1C2635;
+        width: 100%;
+    }
+
+    .flex-us {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .flex-us .kata {
+        margin: 0 auto;
+        padding: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flex-us .kata {
+        justify-content: center;
+    }
+
+    .flex-us .kata .deskripsi {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .flex-us .kata .flex-satu {
+        justify-content: center;
+    }
+
+    .flex-us .kata .flex-satu .card p {
+        text-align: center;
+    }
+
+    .flex-us img {
+        display: none;
+    }
+
+    .most h2 {
+        margin-bottom: 2rem;
+    }
+
+    .most .bungkus {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+
+    .most .gabung {
+        gap: 4rem;
+    }
+
+    .most .load-more {
+        width: 100%;
+    }
+
+    .contact-us {
+        padding: 0;
+    }
+
+    .contact-us .flex-cs .column-cs .kirim {
+        display: flex;
+        justify-content: center;
+        width: 225%;
+    }
+
+    .contact-us .flex-cs .kanan .phone h4 {
+        font-size: 1rem;
+    }
+
+    .footer .flex-footer {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .footer .flex-footer .desc-footer {
+        width: max-content;
+        gap: 2rem;
+    }
+}
